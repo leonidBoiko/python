@@ -2,10 +2,10 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart 
 
-username = 'semashka092@gmail.com'
-password = 'blv325225'
+username = ''
+password = ''
 
-def send_mail(text='Email Body', subject='Hello World', from_email='Hanry_Py <semashka092@gmail.com>', to_emails=None, html=None):
+def send_mail(text='Email Body', subject='Hello World', from_email='Hanry_Py <>', to_emails=None, html=None):
     assert isinstance(to_emails, list)
     msg = MIMEMultipart('alternative')
     msg['From'] = from_email
